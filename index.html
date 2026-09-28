@@ -149,39 +149,54 @@
   .fine-print{ margin-top:36px; padding-top:20px; border-top:1px solid rgba(246,244,239,0.12); font-size:0.8rem; text-align:center; }
   @media (max-width:760px){ footer .wrap{ grid-template-columns:1fr; } }
 
-  /* ================================
-   CRAFTED BY KASITU WEBS
-================================ */
+/* =================================
+   TYRE WEBSITE - CRAFTED BY KASITU
+================================= */
 
 .crafted-by {
-    margin-top: 10px;
+    margin-top: 12px;
     font-size: 13px;
-    color: #777;
-    letter-spacing: 0.4px;
-}
-
-.crafted-by span {
-    color: #c62828;
-    margin: 0 3px;
+    color: #a0a0a0;
+    letter-spacing: 0.5px;
+    text-align: center;
+    line-height: 1.8;
 }
 
 .crafted-by a {
-    color: #f5f5f5;
-    font-weight: 700;
-    letter-spacing: 0.8px;
+    display: inline-block;
+    color: #ff6b00;
+    font-weight: 800;
+    letter-spacing: 1px;
     text-decoration: none;
+    margin-left: 4px;
     transition: all 0.3s ease;
 }
 
 .crafted-by a:hover {
-    color: #c62828;
-    text-shadow: 0 0 12px rgba(198, 40, 40, 0.45);
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(255, 107, 0, 0.6);
 }
 
-/* Mobile */
+/* Subtle orange accent */
+.crafted-by::before {
+    content: "";
+    display: block;
+    width: 40px;
+    height: 2px;
+    background: #ff6b00;
+    margin: 0 auto 12px;
+    border-radius: 2px;
+}
+
+/* Mobile responsive */
 @media (max-width: 600px) {
     .crafted-by {
         font-size: 12px;
+        margin-top: 10px;
+    }
+
+    .crafted-by a {
+        letter-spacing: 0.7px;
     }
 }
   
